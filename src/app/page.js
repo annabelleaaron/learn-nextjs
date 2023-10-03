@@ -15,7 +15,7 @@ export default function Home() {
         <nav className='py-5 mb-12 flex justify-between'>
           <h1 className='text-xl font-burtons'>annabelleaaron</h1>
           <ul className='flex items-center'>
-            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl' /></li>
+            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:fill-lime-300' /></li>
             <li><a className='bg-gradient-to-r from-yellow-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
           </ul>
         </nav>
@@ -31,7 +31,7 @@ export default function Home() {
           <AiFillYoutube />
         </div>
         <div className='relative mx-auto bg-gradient-to-t from-gray-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-          <Image src={aalogo} layout='fill' objectFit='cover' />
+          <Image src={aalogo} fill={true} style={{objectFit: "cover"}}/>
         </div>
       </section>
 
@@ -82,22 +82,22 @@ export default function Home() {
           {/* basis-1/2 is basically give this element 50% width, flex-1 is to fill all available space */}
           <div className='basis-1/3 flex-1'>
           {/* object-cover allow the object to fill in the whole div, */}
-            <Image src={aalogo} className='rounded-lg onject-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            <Image src={aalogo} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
           </div>
           <div className='basis-1/3 flex-1'>
-            <Image src={aalogo} className='rounded-lg onject-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            <Image src={aalogo} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
           </div>
           <div className='basis-1/3 flex-1'>
-            <Image src={aalogo} className='rounded-lg onject-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            <Image src={aalogo} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
           </div>
           <div className='basis-1/3 flex-1'>
-            <Image src={aalogo} className='rounded-lg onject-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            <Image src={aalogo} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
           </div>
           <div className='basis-1/3 flex-1'>
-            <Image src={aalogo} className='rounded-lg onject-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            <Image src={aalogo} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
           </div>
           <div className='basis-1/3 flex-1'>
-            <Image src={aalogo} className='rounded-lg onject-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            <Image src={aalogo} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
           </div>
         </div>
       </section>
